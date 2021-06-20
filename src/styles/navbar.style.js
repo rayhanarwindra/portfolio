@@ -8,9 +8,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     color: "white",
     fontWeight: "bold",
-    [theme.breakpoints.down("md")]:{
-      fontSize: "1rem"
-    }
+    [theme.breakpoints.down("md")]: {
+      fontSize: "1rem",
+    },
   },
   appbar: {
     border: "none",
@@ -23,11 +23,11 @@ const useStyles = makeStyles((theme) => ({
     padding: "3px 14px",
     fontSize: "1.1rem",
     backgroundImage: "linear-gradient(to top right, #6A53FB, #6C86FA)",
-    [theme.breakpoints.down("md")]:{
+    [theme.breakpoints.down("md")]: {
       marginRight: "0",
       padding: "0 8px",
-      fontSize: "1.1rem"
-    }
+      fontSize: "1.1rem",
+    },
   },
 }));
 

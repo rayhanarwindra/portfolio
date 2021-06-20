@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import useStyles from './styles/navbar.style';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import Resume from './documents/resume.pdf';
 
 export default function Navbar() {
   const classes = useStyles();
@@ -16,7 +17,7 @@ export default function Navbar() {
           <Typography variant="h6" className={classes.title}>
             Rayhan Arwindra
           </Typography>
-          <Button endIcon={<GetAppIcon />} className={classes.button} color="primary" variant="contained">View Resume</Button>
+          <Button href={Resume} target="_blank" endIcon={<GetAppIcon />} className={classes.button} color="primary" variant="contained">View Resume</Button>
         </Toolbar>
       </AppBar>
     </div>

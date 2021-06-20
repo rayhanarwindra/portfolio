@@ -14,13 +14,13 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: "bold",
     marginBottom: "30px",
     [theme.breakpoints.down("md")]: {
-      fontSize: "50px"
+      fontSize: "50px",
     },
   },
   subtitle: {
     [theme.breakpoints.down("md")]: {
-      fontSize: "45px"
-    }
+      fontSize: "45px",
+    },
   },
   prompt: {
     textAlign: "center",

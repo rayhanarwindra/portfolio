@@ -6,9 +6,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "transparent",
     color: "white",
     boxShadow: "none",
-    [theme.breakpoints.down('md')]:{
-      margin: "10px 0"
-    }
+    [theme.breakpoints.down("md")]: {
+      margin: "10px 0",
+    },
   },
   codeBtn: {
     textTransform: "none",
