@@ -1,1 +1,1 @@
-This is the codebase for Rayhan Arwindra's Portfolio website
+This is the codebase for Rayhan Arwindra's Portfolio website. You can view this website at https://rayhanarwindra.netlify.com/

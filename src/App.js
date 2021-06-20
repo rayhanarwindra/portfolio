@@ -1,19 +1,21 @@
-import useStyles from "./styles/app.style";
 import Navbar from "./Navbar";
 import Landing from "./Landing";
-import Theme from "./styles/theme.style";
-import { ThemeProvider } from "@material-ui/styles";
+import FontProvider from "./themes/FontProvider";
+import BackgroundProvider from "./themes/BackgroundProvider";
+import "./App.css";
+import Portfolio from "./Portfolio";
+import Footer from './Footer';
 
 function App() {
-  const classes = useStyles();
-
   return (
-    <ThemeProvider theme={Theme}>
-      <div className={classes.body}>
+    <BackgroundProvider>
+      <FontProvider>
         <Navbar />
         <Landing />
-      </div>
-    </ThemeProvider>
+        <Portfolio />
+        <Footer />
+      </FontProvider>
+    </BackgroundProvider>
   );
 }
 
