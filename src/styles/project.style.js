@@ -1,11 +1,14 @@
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   card: {
     margin: "10px 50px",
     backgroundColor: "transparent",
     color: "white",
-    boxShadow: "none"
+    boxShadow: "none",
+    [theme.breakpoints.down('md')]:{
+      margin: "10px 0"
+    }
   },
   codeBtn: {
     textTransform: "none",
@@ -22,8 +25,8 @@ const useStyles = makeStyles({
     backgroundImage: "linear-gradient(to top right, #D201F4, #BD0071)",
   },
   title: {
-      fontWeight: "bold",
-  }
-});
+    fontWeight: "bold",
+  },
+}));
 
 export default useStyles;

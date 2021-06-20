@@ -5,7 +5,7 @@ import { Grid } from "@material-ui/core";
 import useStyles from "./styles/portfolio.style";
 
 function Portfolio() {
-  const classes = useStyles();  
+  const classes = useStyles();
   const projects = [
     {
       image: Pilar,
