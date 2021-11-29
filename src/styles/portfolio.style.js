@@ -8,6 +8,11 @@ const useStyles = makeStyles((theme) => ({
       padding: "0 20px",
     },
   },
+  text : {
+    margin: "15px 0 30px",
+    color: "white",
+    textAlign: "center"
+  }
 }));
 
 export default useStyles;

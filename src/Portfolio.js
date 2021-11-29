@@ -1,10 +1,12 @@
 import Pilar from "./images/pilar.png";
 import MyWeather from "./images/myweather.png";
+import Growcery from "./images/growcery.png";
+import BeliGrosir from "./images/beligrosir.png";
 import Project from "./Project";
 import { Grid } from "@material-ui/core";
 import useStyles from "./styles/portfolio.style";
 
-function Portfolio() {
+function Portfolio({ refProp }) {
   const classes = useStyles();
   const projects = [
     {
@@ -25,16 +27,37 @@ function Portfolio() {
       codeUrl: "https://github.com/rayhanarwindra/myweather",
       appUrl: "https://myweatherwebsite.netlify.app/",
     },
+    {
+      image: Growcery,
+      title: "Growcery",
+      description:
+        "An e-commerce website for users to buy produce directly from farmers.",
+      techStack: "Next.js, Sass, Material UI",
+      codeUrl: "https://github.com/decompile-growcery/decompile-fe",
+      appUrl: "https://growcery-decompile.vercel.app/",
+    },
+    {
+      image: BeliGrosir,
+      title: "BeliGrosir",
+      description:
+        "An e-commerce website for users to buy items in bulk. Created for GarudaHacks Hackathon 2021.",
+      techStack: "Next.js, React Bootstrap",
+      codeUrl: "https://github.com/BeliGrosir/frontend",
+      appUrl: "https://beligrosir.vercel.app/",
+    },
   ];
 
   return (
-    <Grid container className={classes.body}>
-      {projects.map((p, i) => (
-        <Grid key={i} item md={6} xs={12}>
-          <Project {...p} />
-        </Grid>
-      ))}
-    </Grid>
+    <>
+      <h1 ref={refProp} className={classes.text}>My Projects</h1>
+      <Grid container className={classes.body}>
+        {projects.map((p, i) => (
+          <Grid key={i} item md={6} xs={12}>
+            <Project {...p} />
+          </Grid>
+        ))}
+      </Grid>
+    </>
   );
 }
 export default Portfolio;

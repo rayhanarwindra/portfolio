@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Navbar from "./Navbar";
 import Landing from "./Landing";
 import FontProvider from "./themes/FontProvider";
@@ -7,12 +8,14 @@ import Portfolio from "./Portfolio";
 import Footer from './Footer';
 
 function App() {
+  const myRef = useRef(null);
+  const executeScroll = () => myRef.current.scrollIntoView();
   return (
     <BackgroundProvider>
       <FontProvider>
         <Navbar />
-        <Landing />
-        <Portfolio />
+        <Landing executeScroll={executeScroll} />
+        <Portfolio refProp={myRef} />
         <Footer />
       </FontProvider>
     </BackgroundProvider>

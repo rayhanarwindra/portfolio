@@ -3,7 +3,7 @@ import useStyles from "./styles/landing.style";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { IconButton } from "@material-ui/core";
 
-function Landing() {
+function Landing({ executeScroll }) {
   const classes = useStyles();
   return (
     <div className={classes.body}>
@@ -15,8 +15,8 @@ function Landing() {
       </Typography>
       <div className={classes.prompt}>
         <Typography variant="h6">See My Works</Typography>
-        <IconButton>
-          <ExpandMoreIcon className={classes.icon}/>
+        <IconButton onClick={executeScroll}>
+          <ExpandMoreIcon className={classes.icon} />
         </IconButton>
       </div>
     </div>
