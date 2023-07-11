@@ -27,7 +27,7 @@ function Footer() {
         <SocialMedia key={i} {...s} />
       ))}
       <Typography align="center" variant="h6">
-        &#169; 2021 Rayhan Arwindra
+        &#169; {new Date().getFullYear()} Rayhan Arwindra
       </Typography>
     </footer>
   );

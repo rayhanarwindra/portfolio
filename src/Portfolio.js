@@ -2,6 +2,7 @@ import Pilar from "./images/pilar.png";
 import MyWeather from "./images/myweather.png";
 import Growcery from "./images/growcery.png";
 import BeliGrosir from "./images/beligrosir.png";
+import Calculator from "./images/calculator.png"
 import Project from "./Project";
 import { Grid } from "@material-ui/core";
 import useStyles from "./styles/portfolio.style";
@@ -44,6 +45,15 @@ function Portfolio({ refProp }) {
       techStack: "Next.js, React Bootstrap",
       codeUrl: "https://github.com/BeliGrosir/frontend",
       appUrl: "https://beligrosir.vercel.app/",
+    },
+    {
+      image: Calculator,
+      title: "Calculator App",
+      description:
+        "A calculator app to compare between options and composition API in Vue 3",
+      techStack: "Vue 3, Options API, Composition API",
+      codeUrl: "https://github.com/rayhanarwindra/option-composition",
+      appUrl: "https://options-composition.netlify.app/",
     },
   ];
 
